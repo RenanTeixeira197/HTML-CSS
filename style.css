@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Alpha Kind';
+    src: url('../Fontes/Alphakind.otf') format('opentype'),
+         url('../Fontes/Alphakind.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Display Patrol';
+    src: url('../Fontes/DK Display Patrol.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Toony Line Fill';
+    src: url('../Fontes/ToonyLineFill_PERSONAL_USE_ONLY.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Toony Line';
+    src: url('../Fontes/ToonyLine_PERSONAL_USE_ONLY.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @media (max-width: 900px) {
+    article {
+      margin: 10px;
+    }
+  }
+  
+  
+  /* Variáveis globais */
+  :root {
+    --color1: #2d2d29;
+    --color2: #215a6d;
+    --color3: #3ca2a2;
+    --color4: #92c7a3;
+    --color5: #dfece6;
+    --color6: rgb(94, 243, 196);
+  
+    --fonte-titulo: 'Alpha Kind', sans-serif;
+    --fonte-padrao: 'Display Patrol', sans-serif;
+    --fonte-auxiliar1: 'Toony Line', sans-serif;
+    --fonte-auxiliar2: 'Toony Line Fill', sans-serif;
+  }
+  
+  body {
+    background-color: var(--color5);
+    margin: 0;
+    font-family: var(--fonte-padrao);
+  }
+  
+  header {
+    background-image: linear-gradient(to bottom, var(--color1), var(--color2), var(--color3));
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: var(--color6);
+    font-family: var(--fonte-auxiliar1);
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: var(--color5);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+  }
+  
+  nav a:hover {
+    color: var(--color2);
+    background-color: var(--color5);
+  }
+  nav a:focus {
+    outline: 2px solid var(--color6);
+    background-color: var(--color4);
+    color: var(--color1);
+  }  
+  article {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+  }
+  
+  article h1,
+  article h2 {
+    color: var(--color6);
+    font-family: var(--fonte-titulo);
+    background-color: var(--color2);
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: large;
+  }
+  
+  article p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    color: var(--color1);
+  }
+  
+  /* Responsividade básica */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 28px;
+    }
+  
+    nav a {
+      display: block;
+      margin: 5px 0;
+    }
+  
+    article {
+      padding: 10px;
+    }
+  }
+  
